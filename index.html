@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Product Challange</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Rubik', sans-serif;
+            background-color: #f8f0fc;
+            height: 100vh;
+            font-size: 12px;
+            color: #495057;
+            line-height: 1.6;
+        }
+        .container{
+            width: 800px;
+            height: 450px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 100px auto;
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+           
+        }
+        .product-details{
+            background-color: #fff;
+            height: 45vh;
+            padding: 12px 42px;
+        }
+        
+        h2{
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 2.0px;
+            color: #adb5bd;
+        }
+        h1{
+            font-size: 28px;
+            line-height: 1.1;
+            letter-spacing: 1.2px;
+            margin: 18px 3px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.4;
+            margin: 36px 0;
+            color: #495057;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 24px;
+            color: #099268;
+        }
+        .image{
+            grid-column: -3 / -2;
+        }
+        button{
+            color: #fff;
+            font-size: 16px;
+            background-color: #099268;
+            border-style: none;
+            padding: 16px 86px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin: 20px 6px;
+        }
+        button:hover,
+        button:active{
+            background-color: #0ca678;
+            cursor: pointer;
+            padding: 18px 90px;
+        }
+        .icon{
+            width: 24px;
+            height: 24px;
+            font-weight: 700;
+        }
+        .btn{
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="image">
+        <img src="./images/image.jpg" alt="Chanel spray picture"
+        width="100%"
+        height="450px">
+    </div>
+    <div class="product-details">
+        <h2>Perfume</h2>
+        <h1>Gabriel Essence Eau De Parfum</h1>
+        <p>A floral, solar and voluptious interpretation <br> Olivier Polgue
+            Perfume - Creator for the house of <strong>CHANEL</strong>
+        </p>
+        <h3>&#x24; 149.99</h3>
+        <button class="btn">
+            <div class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>
+              </div>Add to Cart</button>
+    </div>
+    </div>  
+</body>
+</html>
